@@ -1,52 +1,41 @@
+# Python bytecode files
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+*.pyc
+*.pyo
+*.pyd
 
 # Virtual environments
 venv/
 env/
-ENV/
-.venv
 
-# IDE
+# Python distribution/build folders
+build/
+dist/
+*.egg-info/
+
+# Environment variable files (secret keys, tokens)
+.env
+
+# IDE/editor folders/settings
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
+*.sublime-project
+*.sublime-workspace
 
-# Environment variables
-.env
-.env.local
-
-# Excel files (local only - not in git)
-*.xlsx
-*.xls
-feedback_data.xlsx
-
-# Vercel
-.vercel
-
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Logs
+# Data files (do NOT commit large or sensitive data)
+*.xlsx
+*.csv
+feedback_data.xlsx
+feedback_data.csv
+
+# Git files
+.git/
+.gitignore
+
+# Logs and temporary files
 *.log
+*.tmp
